@@ -1,0 +1,31 @@
+[
+    {
+        "filter_name": "climate change",
+        "filter_values": [
+            "cc",
+            "nocc"
+        ]
+    },
+
+    {
+        "filter_name": "website",
+        "filter_values": [
+            "eltiempoes",
+            "ilmeteoit",
+            "metofficegovuk",
+            "tiempocom",
+            "weathercom"
+        ]
+    },
+
+    {
+        "filter_name": "image type",
+        "filter_values": [
+            "images",
+            "thumbnail",
+            "videoThumb",
+            "cover",
+            "slideshow"
+        ]
+    }
+]
