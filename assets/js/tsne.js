@@ -1437,14 +1437,14 @@ World.prototype.setBuffer = function(key, arr) {
 
 World.prototype.setBorderedImages = function(indices) {
   var vals = new Uint8Array(data.cells.length);
-  for (var i=0; i<indices.length; i++) vals[indices[i]] = 0.15;
+  for (var i=0; i<indices.length; i++) vals[indices[i]] = 1;
   this.setBuffer('selected', vals);
 }
 
 World.prototype.setOpaqueImages = function(indices) {
   var vals = new Float32Array(data.cells.length);
-  for (var i=0; i<vals.length; i++) vals[i] = 1;
-  for (var i=0; i<indices.length; i++) vals[indices[i]] = 0.15;
+  for (var i=0; i<vals.length; i++) vals[i] = 0.15;
+  for (var i=0; i<indices.length; i++) vals[indices[i]] = 1;
   this.setBuffer('opacity', vals);
 }
 
